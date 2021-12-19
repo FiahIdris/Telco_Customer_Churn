@@ -53,7 +53,7 @@ def homepage_screen():
         Customer account information – how long they’ve been a customer, contract, payment method, paperless billing, monthly charges, and total charges
         Demographic info about customers – gender, age range, and if they have partners and dependents
         
-        The dataset constains of 7043 instances and 21columns. More information of the dataset can be accessed [here]("https://www.kaggle.com/blastchar/telco-customer-churn").
+        The dataset constains of 7043 instances and 21columns. More information of the dataset can be accessed [here](https://www.kaggle.com/blastchar/telco-customer-churn).
         
     """)
 
