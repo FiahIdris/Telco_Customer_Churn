@@ -234,10 +234,10 @@ def model_predict():
         result = my_keras_model.predict(new_data)
         updated_res = result.flatten().astype(float)
       
-        if updated_res[0] >= 0.51:
-            updated_res = f"😱  {np.ceil(updated_res[0]*100)} % probability of this customer will churn."
+        if updated_res[0] > 0.50:
+            updated_res = f"😱 Probability value: {np.ceil(updated_res[0]*100)} %. This customer might churn."
         else:
-            updated_res = f"🤩  {np.ceil(updated_res[0]*100)} % probability of this customer will not churn."
+            updated_res = f"🤩 Probability value:  {np.ceil(updated_res[0]*100)} %. This customer might not churn."
         st.success(
             '{}'.format(updated_res))
 
